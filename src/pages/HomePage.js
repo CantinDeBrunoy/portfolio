@@ -16,7 +16,6 @@ const HomePage = () => {
         <div className="container">
             <div className="content-top">
                 <h1>SCROLL VERS LE BAS</h1>
-                {/* <img src={scrollDown}/> */}
             </div>
                        
             <div className="content-header">
@@ -25,7 +24,7 @@ const HomePage = () => {
             </div>
 
             <div className="content">
-                <button className='button'>BUTTON</button>
+                <button className='button-29'>BUTTON</button>
             </div>
             
 
