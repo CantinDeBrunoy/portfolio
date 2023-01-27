@@ -138,16 +138,67 @@ body{
 }
 
 .backgroundTransition{
+    border-radius: 100%;
     display: none;
     z-index: 1;
-    width: 110%;
-    height: 100%;
     position: absolute;
+    width: 10em;
+    height: 10em;
     left: 50%; 
     transform: translate(-50%, 0%); 
-    background-image: radial-gradient(100% 100% at 100% 0, #80a0b7 0, #94abc3 100%);
+}
+
+.TransitionBlue{
+    animation: backgroundTransition 5s ease forwards;
+    background: radial-gradient(#e6bcc7, #d7b6c7);
+}
+
+.TransitionPurple{
+    animation: backgroundTransition 7s ease forwards;
+    background: radial-gradient( #ffd3da,#e6bcc7);
+}
+
+.TransitionBlack{
+    animation: backgroundTransition 9s ease forwards;
+    background: radial-gradient(#fee2e3, #ffd3da);
+}
+
+@keyframes backgroundTransition {
+    0%{
+        width: 0%;
+        height: 0%;
+    }
+    100%{
+        width: 10000px;
+        height: 10000px;
+    }  
 }
 
 .displayBlock{
     display: block;
+}
+
+.LangButton{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    width: 70px;
+    height: 40px;
+    background: url("../img/flags.jpg") bottom/100% no-repeat;
+    z-index: 3;
+    border-radius: 5%;
+    cursor: pointer;
+    animation: buttonTrad 9s ease forwards;
+}
+
+@keyframes buttonTrad {
+    0%{
+        scale: (1);
+    }
+    50%{
+        scale: (2);
+    }
+    100%{
+        scale: (1);
+    }  
 }
