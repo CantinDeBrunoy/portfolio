@@ -7,6 +7,7 @@ import { homePageTradEng, homePageTradFR } from '../trad/homePageFormat';
 const HomePage = () => {
     const [indexY,setIndexY] = useState();
     const [buttonIsClicked,setButtonIsClicked] = useState(false);
+    const [buttonIsClickedFormat,setButtonIsClickedFormat] = useState(false);
     const [format,setFormat] = useState(homePageTradEng);
     const navigate = useNavigate();
 
@@ -35,13 +36,17 @@ const HomePage = () => {
           
     }
 
-    const switchLanguage = () => {
+    const switchLanguage = (bool) => {
         setFormat(format == homePageTradFR ?  homePageTradEng: homePageTradFR);
+        setTimeout(() => {
+            setButtonIsClickedFormat(!bool);
+        }, "1000")
+        setButtonIsClickedFormat(bool);
     }
 
   return (
     <div className="HomePage">
-        <div className='LangButton' onClick={switchLanguage}></div>
+        <div className={`LangButton ${buttonIsClickedFormat ? 'LangButtonActive': ''}`} onClick={() =>switchLanguage(true)}></div>
 
         <div className="paralax">
             <div className="paralax-item p-item1"></div>
