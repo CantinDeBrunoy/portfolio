@@ -1,0 +1,50 @@
+.Slide{
+    width: 100%;
+    height: 100vh;
+}
+
+.Slide_Title{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 8em;
+    color: white;
+    font-family: BebasNeueRegular;
+}
+
+@font-face {
+    font-family: BebasNeueRegular;
+    src: url('../font/Bebas_Neue/BebasNeueRegular.ttf');
+  }
+
+  .Slide_Id{
+    position:absolute;
+    top: 2vh;
+    left: 2vw;
+    font-size: 2em;
+    /* color: var(--subColor); */
+    font-family: BebasNeueRegular;
+  }
+
+  .Slide_Header{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+  }
+
+  .Slide_Link{
+    position: absolute;
+    bottom: 5vh;
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, 0);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: white;
+  }
+
+  

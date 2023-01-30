@@ -29,7 +29,7 @@ const HomePage = () => {
         setButtonIsClicked(bool);
         setTimeout(() => {
             navigate('projects');
-        }, "5000")
+        }, "2000")
         setTimeout(() => {
             setButtonIsClicked(!bool);
         }, "12000")
