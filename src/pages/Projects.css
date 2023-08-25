@@ -1,0 +1,18 @@
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh; /* La slide prend toute la hauteur de l'écran */
+  font-size: 24px;
+  color: black;
+  scroll-snap-align: start;
+}
+
+.Projects {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Hauteur totale de l'écran */
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
